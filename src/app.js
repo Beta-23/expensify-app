@@ -1,9 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import IlearnxApp from './components/IlearnxApp';
 import 'normalize.css/normalize.css';
 import './styles/styles.scss'; 
-ReactDOM.render(<IlearnxApp />, document.getElementById('app'));
+ReactDOM.render(<p>New Expensify App Boilerplate</p>,document.getElementById('app'));
 
 
 
