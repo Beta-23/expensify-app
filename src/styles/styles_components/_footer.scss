@@ -1,0 +1,28 @@
+.footer {
+    font-size: $s-size;
+    color: $color-white-transparent;
+    display: flex;
+    justify-content: center;
+    background-color: $brand-color;
+    border-top: $border-3px-size solid darken($color-white-transparent, 10%);
+    border-bottom: $border-3px-size solid darken($brand-offset, 10%);
+    padding: 2rem 0;
+
+    /* Need to fix below */
+    position: relative;
+    margin: $l-size 0 0 0;
+    width: 100%;
+    height: $s-size;
+}
+
+a {
+    color: $color-white-transparent;
+    margin-left: $xs-size;
+}
+
+// Mobile divice UI settings
+@media (min-width: $desktop-breakpoint) {
+    .footer {
+        margin-bottom: $xl-size;
+    }
+}

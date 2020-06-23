@@ -1,0 +1,40 @@
+// Big Button
+.big-button {
+    background: $brand-offset;
+    border: none;
+    border-bottom: .6rem solid darken($brand-offset, 10%);
+    color: $brand-color;
+    font-weight: bold;
+    font-size: $l-size;
+    margin-bottom: $m-size;
+    padding: 2.4rem;
+    width: 100%;
+}
+
+.big-button:disabled {
+    opacity: .5;
+}
+
+// All Other Buttons
+.button {
+    background-color: $brand-offset;
+    border: none;
+    border-bottom: .3rem solid darken($brand-offset, 10%);
+    color: $brand-color;
+    font-weight: bold;
+    padding: $s-size;
+}
+
+.button--link {
+    background: none;
+    border: none;
+    color: $brand-offset;
+    padding: 0;
+}
+
+// Mobile divice UI settings
+@media (min-width: $desktop-breakpoint) {
+    .big-button {
+        margin-bottom: $xl-size;
+    }
+}

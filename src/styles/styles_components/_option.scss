@@ -1,0 +1,19 @@
+.option {
+    border-bottom: $border-1px-size solid lighten($widget-light-blue, 10%);
+    display: flex;
+    justify-content: space-between;
+    padding: $s-size $m-size;
+}
+
+.option__text {
+    color: white;
+    font-weight: 500;
+    font-size: 2rem;
+    margin: 0;
+    word-break: break-all;
+}
+
+.option__remove {
+    font-size: $m-size;
+    color: red;
+}
