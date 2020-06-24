@@ -19,12 +19,11 @@ const AddExpensePage = () => (
 const routes = (
     <BrowserRouter>
         <div>
-            <Route path="/" component={ExpenseDashboardPage} />
-            <Route path="/create" component={AddExpensePage}/>
+            <Route path="/" component={ ExpenseDashboardPage } exact={ true }/>
+            <Route path="/create" component={ AddExpensePage } />
         </div>
     </BrowserRouter>
 )
-
 
 ReactDOM.render(routes,document.getElementById('app'));
 
