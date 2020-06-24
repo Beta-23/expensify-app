@@ -4,15 +4,22 @@ import { BrowserRouter, Route } from 'react-router-dom';
 import 'normalize.css/normalize.css';
 import './styles/styles.scss'; 
 
+// Functional Components
 const ExpenseDashboardPage = () => (
     <div>
-        App dashboard Component
+        DASH | App dashboard Component
     </div>
 );
 
 const AddExpensePage = () => (
     <div>
-        App Expense Component
+        ADD | App Expense Component
+    </div>
+);
+
+const EditExpensePage = () => (
+    <div>
+        EDIT | App Expense Component
     </div>
 );
 
@@ -21,6 +28,7 @@ const routes = (
         <div>
             <Route path="/" component={ ExpenseDashboardPage } exact={ true }/>
             <Route path="/create" component={ AddExpensePage } />
+            <Route path="/edit" component={ EditExpensePage } />
         </div>
     </BrowserRouter>
 )
