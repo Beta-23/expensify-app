@@ -29,6 +29,12 @@ const HelpPage = () => (
     </div>
 );
 
+const errorPage = () => (
+    <div>
+        404 | App Expense Component
+    </div>
+);
+
 const routes = (
     <BrowserRouter>
         <div>
