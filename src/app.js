@@ -42,6 +42,7 @@ const routes = (
             <Route path="/create" component={ AddExpensePage } />
             <Route path="/edit" component={ EditExpensePage } />
             <Route path="/help" component={ HelpPage } />
+            <Route path="/404" component={ errorPage } />
         </div>
     </BrowserRouter>
 )
