@@ -29,9 +29,9 @@ const HelpPage = () => (
     </div>
 );
 
-const errorPage = () => (
+const NotFoundPage = () => (
     <div>
-        404 | App Expense Component
+        404 - <a href="/">Go to Homepage!</a>
     </div>
 );
 
@@ -42,7 +42,7 @@ const routes = (
             <Route path="/create" component={ AddExpensePage } />
             <Route path="/edit" component={ EditExpensePage } />
             <Route path="/help" component={ HelpPage } />
-            <Route path="/404" component={ errorPage } />
+            <Route component={ NotFoundPage } />
         </Switch>
     </BrowserRouter>
 )
