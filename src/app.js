@@ -7,25 +7,31 @@ import './styles/styles.scss';
 // Functional Components
 const ExpenseDashboardPage = () => (
     <div>
-        DASH | App dashboard Component
+        <h5>DASH | App dashboard Component</h5>
+        <Link to="/create">Create Expense</Link>
     </div>
 );
 
 const AddExpensePage = () => (
     <div>
-        ADD | App Expense Component
+        <h5>ADD | App Expense Component</h5>
+        <Link to="/edit">Edit Expense</Link>
+        <Link to="/">Go Home</Link>
     </div>
 );
 
 const EditExpensePage = () => (
     <div>
-        EDIT | App Expense Component
+        <h5>EDIT | App Expense Component</h5>
+        <Link to="/">Go Home</Link>
+        <Link to="/create">Create Expense</Link>
     </div>
 );
 
 const HelpPage = () => (
     <div>
-        HELP | App Expense Component
+        <h5>HELP | App Expense Component</h5>
+        <Link to="/">Go Home</Link>
     </div>
 );
 
