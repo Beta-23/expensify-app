@@ -1,12 +1,13 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch, Link, NavLink } from 'react-router-dom';
+import ExpenseDashboardPage from '../components/ExpenseDashboardPage';
 
 // Functional Components
-const ExpenseDashboardPage = () => (
-    <div>
-        <h5>DASH | App dashboard Component</h5>
-    </div>
-);
+// const ExpenseDashboardPage = () => (
+//     <div>
+//         <h5>DASH | App dashboard Component</h5>
+//     </div>
+// );
 
 const AddExpensePage = () => (
     <div>
@@ -28,7 +29,7 @@ const HelpPage = () => (
 
 const NotFoundPage = () => (
     <div>
-        404 | <Link to="/">Go Home </Link>
+        404 
     </div>
 );
 
