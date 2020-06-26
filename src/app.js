@@ -37,13 +37,13 @@ const NotFoundPage = () => (
 
 const routes = (
     <BrowserRouter>
-        <Switch>
+        <div>
             <Route path="/" component={ ExpenseDashboardPage } exact={ true }/>
             <Route path="/create" component={ AddExpensePage } />
             <Route path="/edit" component={ EditExpensePage } />
             <Route path="/help" component={ HelpPage } />
             <Route component={ NotFoundPage } />
-        </Switch>
+        </div>
     </BrowserRouter>
 )
 
