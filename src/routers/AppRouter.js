@@ -7,12 +7,6 @@ import ExpenseDashboardPage from '../components/ExpenseDashboardPage';
 
 // Functional Components
 
-// const EditExpensePage = () => (
-//     <div>
-//         <h5>EDIT | App Expense Component</h5>
-//     </div>
-// );
-
 const HelpPage = () => (
     <div>
         <h5>HELP | App Expense Component</h5>
