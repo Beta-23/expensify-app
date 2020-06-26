@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Route, Switch, Link, NavLink } from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 import AddExpensePage from '../components/AddExpensePage';
 import EditExpensePage from '../components/EditExpensePage';
@@ -8,18 +8,7 @@ import Header from '../components/Header';
 import HelpPage from '../components/HelpPage';
 import NotFoundPage from '../components/NotFoundPage';
 
-// Functional Components
-
-const Header = () => (
-    <header>
-        <h1>ExpensifyApp</h1>
-            <NavLink to="/" activeClassName="is-active" exact={ true }>Dashboard</NavLink>
-            <NavLink to="/create" activeClassName="is-active">Create Expense</NavLink>
-            <NavLink to="/edit" activeClassName="is-active">Edit Expense</NavLink>
-            <NavLink to="/help" activeClassName="is-active">QA</NavLink>
-    </header>
-);
-
+// Functional component with browser router
 const AppRouter = () => (
     <BrowserRouter>
         <div>
