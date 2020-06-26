@@ -3,11 +3,6 @@ import { BrowserRouter, Route, Switch, Link, NavLink } from 'react-router-dom';
 import ExpenseDashboardPage from '../components/ExpenseDashboardPage';
 
 // Functional Components
-// const ExpenseDashboardPage = () => (
-//     <div>
-//         <h5>DASH | App dashboard Component</h5>
-//     </div>
-// );
 
 const AddExpensePage = () => (
     <div>
