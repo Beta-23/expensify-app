@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Switch, Link, NavLink } from 'react-router-dom';
 import AddExpensePage from '../components/AddExpensePage';
 import EditExpensePage from '../components/EditExpensePage';
 import ExpenseDashboardPage from '../components/ExpenseDashboardPage';
+import HelpPage from '../components/HelpPage';
 
 // Functional Components
 
