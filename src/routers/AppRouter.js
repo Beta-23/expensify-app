@@ -9,12 +9,6 @@ import NotFoundPage from '../components/NotFoundPage';
 
 // Functional Components
 
-const NotFoundPage = () => (
-    <div>
-        404 
-    </div>
-);
-
 const Header = () => (
     <header>
         <h1>ExpensifyApp</h1>
