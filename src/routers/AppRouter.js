@@ -8,12 +8,6 @@ import HelpPage from '../components/HelpPage';
 
 // Functional Components
 
-const HelpPage = () => (
-    <div>
-        <h5>HELP | App Expense Component</h5>
-    </div>
-);
-
 const NotFoundPage = () => (
     <div>
         404 
