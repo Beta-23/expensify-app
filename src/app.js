@@ -29,6 +29,12 @@ const HelpPage = () => (
     </div>
 );
 
+const errorPage = () => (
+    <div>
+        404 | App Expense Component
+    </div>
+);
+
 const routes = (
     <BrowserRouter>
         <div>
@@ -36,6 +42,7 @@ const routes = (
             <Route path="/create" component={ AddExpensePage } />
             <Route path="/edit" component={ EditExpensePage } />
             <Route path="/help" component={ HelpPage } />
+            <Route path="/404" component={ errorPage } />
         </div>
     </BrowserRouter>
 )
