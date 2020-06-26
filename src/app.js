@@ -8,30 +8,24 @@ import './styles/styles.scss';
 const ExpenseDashboardPage = () => (
     <div>
         <h5>DASH | App dashboard Component</h5>
-        <Link to="/create">Create Expense</Link>
     </div>
 );
 
 const AddExpensePage = () => (
     <div>
         <h5>ADD | App Expense Component</h5>
-        <Link to="/edit">Edit Expense</Link>
-        <Link to="/">Go Home</Link>
     </div>
 );
 
 const EditExpensePage = () => (
     <div>
         <h5>EDIT | App Expense Component</h5>
-        <Link to="/">Go Home</Link>
-        <Link to="/create">Create Expense</Link>
     </div>
 );
 
 const HelpPage = () => (
     <div>
         <h5>HELP | App Expense Component</h5>
-        <Link to="/">Go Home</Link>
     </div>
 );
 
@@ -48,7 +42,6 @@ const Header = () => (
         <Link to="/create">Create Expense</Link>
         <Link to="/edit">Edit Expense</Link>
         <Link to="/help">QA</Link>
-
     </header>
 );
 
