@@ -24,3 +24,5 @@ store.dispatch({
 store.dispatch({
     type: 'INCREMENT',
 });
+
+console.log(store.getState());
