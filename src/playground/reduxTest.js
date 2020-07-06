@@ -14,9 +14,8 @@ const store = createStore((state = { count: 0 }, action) => {
             };
 
             case 'SET': 
-            const setBy = typeof action.count === 'number' ? action.count : 0;
             return {
-                count: 0 + setBy
+                count: action.count
             };
 
             case 'RESET': 
