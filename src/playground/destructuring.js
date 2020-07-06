@@ -35,8 +35,8 @@
 
 // ARRAY DESTRUCTURING:
 
-const address = [ '199 W. June Street', 'New York City', 'New York', '11111' ];
+const address = [];
 
 // destructuring the array and variable assigment (,skip zip)
-const [ street, city, state ] = address;
-console.log(`You are in, ${city}, ${state}.`);
+const [ street, city, state = 'New Jersey' ] = address;
+console.log(`You are in, ${state}.`);
