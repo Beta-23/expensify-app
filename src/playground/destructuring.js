@@ -35,8 +35,16 @@
 
 // ARRAY DESTRUCTURING:
 
-const address = [];
+const address = [ '199 W. June Street', 'New York City', 'New York', '11111' ];
 
 // destructuring the array and variable assigment (,skip zip)
-const [ street, city, state = 'New Jersey' ] = address;
-console.log(`You are in, ${state}.`);
+const [ , city, state = 'New Jersey' ] = address;
+console.log(`You are in, ${city}, ${state}.`);
+
+// grab first and third items of array using destructuring
+
+const item = [ 'Coffee (HOT)', 'Coffee (ICE)', '$2.00', '$2.50', '$2.75' ];
+
+const [ medCoffeeHot, medCoffeeICE, , cost ] = item;
+
+console.log(`A medium ${medCoffeeHot} costs ${cost}`);
