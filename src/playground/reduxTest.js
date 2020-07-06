@@ -59,6 +59,7 @@ store.dispatch({
     decrementBy: 10
 });
 
+// SET count
 store.dispatch({
     type: 'SET',
     count: 101
