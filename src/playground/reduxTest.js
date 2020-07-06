@@ -8,8 +8,9 @@ const store = createStore((state = { count: 0 }, action) => {
                 count: state.count + incrementBy
             };
             case 'DECREMENT': 
+            const decrementBy = typeof action.decrementBy === 'number' ? action.decrementBy : 2;
             return {
-                count: state.count - 1
+                count: state.count - decrementBy
             };
             case 'RESET': 
             return {
@@ -33,19 +34,22 @@ store.dispatch({
     incrementBy: 5
 });
 
-
 store.dispatch({
     type: 'INCREMENT',
+});
+
+// decrement the count
+store.dispatch({
+    type: 'DECREMENT',
+});
+
+store.dispatch({
+    type: 'DECREMENT',
+    decrementBy: 10
 });
 
 // RESET count to zero
 store.dispatch({
     type: 'RESET',
-});
-
-
-// decrement the count
-store.dispatch({
-    type: 'DECREMENT',
 });
 
