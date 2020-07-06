@@ -17,7 +17,11 @@ yarn run dev-server
 module.exports = {
     entry: './src/playground/reduxTest.js',
     }
-```    
+``` 
+ When changing entry point in webpack, close current server and:
+```JavaScript - **Restart Your Server**
+yarn run dev-server
+```  
 ## Development
 
 ## Testing
