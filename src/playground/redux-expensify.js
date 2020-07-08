@@ -10,7 +10,7 @@ import { createStore, combineReducers } from 'redux';
 // SET_END_DATE
 
 // Expense reducer
-const expenseReducerDefaultState = [];
+const expenseReducerDefaultState = [ 'expense1' ];
 const expenseReducer = (state = expenseReducerDefaultState, action) => {
 	switch (action.type) {
 		default:
