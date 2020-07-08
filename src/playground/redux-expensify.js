@@ -9,9 +9,24 @@ import { createStore, combineReducers } from 'redux';
 // SET_START_DATE
 // SET_END_DATE
 
-// Expense reducer
-const expenseReducerDefaultState = [ 'expense1' ];
+// Expense Reducer Array
+const expenseReducerDefaultState = [];
 const expenseReducer = (state = expenseReducerDefaultState, action) => {
+	switch (action.type) {
+		default:
+			return state;
+	}
+};
+
+// Filters Reducer Object
+const filtersReducerDefaultState = {
+	text      : '',
+	sortBy    : 'date',
+	startDate : undefined,
+	endDate   : undefined
+};
+
+const filtersReducer = (state = filtersReducerDefaultState, action) => {
 	switch (action.type) {
 		default:
 			return state;
@@ -21,7 +36,8 @@ const expenseReducer = (state = expenseReducerDefaultState, action) => {
 // Store creation
 const store = createStore(
 	combineReducers({
-		expenses : expenseReducer
+		expenses : expenseReducer,
+		filters  : filtersReducer
 	})
 );
 console.log(store.getState());
