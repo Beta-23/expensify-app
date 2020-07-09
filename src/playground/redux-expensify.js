@@ -17,7 +17,13 @@ const removeExpense = ({ id } = {}) => ({
 	type : 'REMOVE_EXPENSE',
 	id
 });
+
 // EDIT_EXPENSE
+const editExpense = (id, updates) => ({
+	type    : 'EDIT_EXPENSE',
+	id,
+	updates
+});
 // SET_TEXT_FILTER
 // SORT_BY_DATE
 // SORT_BY_AMOUNT
@@ -32,6 +38,14 @@ const expenseReducer = (state = expenseReducerDefaultState, action) => {
 			return [ ...state, action.expense ];
 		case 'REMOVE_EXPENSE':
 			return state.filter(({ id }) => id !== action.id);
+		case 'EDIT_EXPENSE':
+			return state.map((expense) => {
+				if (expense.id === action.id) {
+				}
+				else {
+					return expense;
+				}
+			});
 		default:
 			return state;
 	}
@@ -69,6 +83,8 @@ const expenseTwo = store.dispatch(addExpense({ description: 'Coffee', amount: 35
 
 store.dispatch(removeExpense({ id: expenseOne.expense.id }));
 
+store.dispatch(editExpense(expenseTwo.expenseOne.id, { amount: 500 }));
+
 const demoState = {
 	expenses : [
 		{
@@ -87,9 +103,10 @@ const demoState = {
 	}
 };
 
-const user = {
-	name : 'joe',
-	age  : 26
-};
+// Obj spread via the babel "transform-object-rest-spread" plugin
+// const user = {
+// 	name : 'joe',
+// 	age  : 26
+// };
 
-console.log({ ...user });
+// console.log({ ...user, location: 'NYC', age: 44 });
