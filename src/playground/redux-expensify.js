@@ -41,6 +41,10 @@ const expenseReducer = (state = expenseReducerDefaultState, action) => {
 		case 'EDIT_EXPENSE':
 			return state.map((expense) => {
 				if (expense.id === action.id) {
+					return {
+						...expense,
+						...action.updates
+					};
 				}
 				else {
 					return expense;
@@ -83,7 +87,7 @@ const expenseTwo = store.dispatch(addExpense({ description: 'Coffee', amount: 35
 
 store.dispatch(removeExpense({ id: expenseOne.expense.id }));
 
-store.dispatch(editExpense(expenseTwo.expenseOne.id, { amount: 500 }));
+store.dispatch(editExpense(expenseTwo.expense.id, { amount: 500 }));
 
 const demoState = {
 	expenses : [
