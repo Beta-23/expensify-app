@@ -1,6 +1,16 @@
 import { createStore, combineReducers } from 'redux';
-
-// ADD_EXPENSE
+import { v4 as uuid } from 'uuid';
+// ADD_EXPENSE action generator
+const addExpense = ({ description = '', note = '', amount = 0, createdAt = 0 } = {}) => ({
+	type    : 'ADD_EXPENSE',
+	expense : {
+		id          : uuid(),
+		description,
+		note,
+		amount,
+		createdAt
+	}
+});
 // REMOVE_EXPENSE
 // EDIT_EXPENSE
 // SET_TEXT_FILTER
@@ -13,6 +23,8 @@ import { createStore, combineReducers } from 'redux';
 const expenseReducerDefaultState = [];
 const expenseReducer = (state = expenseReducerDefaultState, action) => {
 	switch (action.type) {
+		case 'ADD_EXPENSE':
+			return state.concat(action.expense);
 		default:
 			return state;
 	}
@@ -40,7 +52,12 @@ const store = createStore(
 		filters  : filtersReducer
 	})
 );
-console.log(store.getState());
+
+store.subscribe(() => {
+	console.log(store.getState());
+});
+
+store.dispatch(addExpense({ description: 'Rent', amount: 100 }));
 
 const demoState = {
 	expenses : [
