@@ -30,9 +30,8 @@ const setTextFilter = (text = '') => ({
 	text
 });
 // SORT_BY_DATE
-const sortByDate = (date = '') => ({
-	type : 'SORT_BY_DATE',
-	date
+const sortByDate = () => ({
+	type : 'SORT_BY_DATE'
 });
 // SORT_BY_AMOUNT
 const sortByAmount = (amount = 0) => ({
@@ -90,7 +89,7 @@ const filtersReducer = (state = filtersReducerDefaultState, action) => {
 		case 'SORT_BY_DATE': {
 			return {
 				...state,
-				date : action.date
+				sortBy : 'date'
 			};
 		}
 		default:
