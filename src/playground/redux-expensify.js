@@ -34,9 +34,8 @@ const sortByDate = () => ({
 	type : 'SORT_BY_DATE'
 });
 // SORT_BY_AMOUNT
-const sortByAmount = (amount = 0) => ({
-	type   : 'SORT_BY_AMOUNT',
-	amount
+const sortByAmount = () => ({
+	type : 'SORT_BY_AMOUNT'
 });
 // SET_START_DATE
 // SET_END_DATE
@@ -84,7 +83,7 @@ const filtersReducer = (state = filtersReducerDefaultState, action) => {
 		case 'SORT_BY_AMOUNT':
 			return {
 				...state,
-				amount : action.amount
+				sortBy : 'amount'
 			};
 		case 'SORT_BY_DATE': {
 			return {
