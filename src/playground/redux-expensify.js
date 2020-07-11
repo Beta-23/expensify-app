@@ -43,6 +43,10 @@ const setStartDate = (startDate) => ({
 	startDate
 });
 // SET_END_DATE
+const setEndDate = (endDate) => ({
+	type    : 'SET_END_DATE',
+	endDate
+});
 
 // Expense Reducer Array
 const expenseReducerDefaultState = [];
@@ -100,6 +104,11 @@ const filtersReducer = (state = filtersReducerDefaultState, action) => {
 				...state,
 				startDate : action.startDate
 			};
+		case 'SET_END_DATE':
+			return {
+				...state,
+				endDate : action.endDate
+			};
 		default:
 			return state;
 	}
@@ -132,6 +141,7 @@ store.subscribe(() => {
 
 store.dispatch(setStartDate(125));
 store.dispatch(setStartDate());
+store.dispatch(setEndDate(1400));
 
 const demoState = {
 	expenses : [
