@@ -1,6 +1,6 @@
 import { createStore, combineReducers } from 'redux';
 import { v4 as uuid } from 'uuid';
-// ADD_EXPENSE action generator
+// ADD_EXPENSE action type generator
 const addExpense = ({ description = '', note = '', amount = 0, createdAt = 0 } = {}) => ({
 	type    : 'ADD_EXPENSE',
 	expense : {
@@ -12,37 +12,37 @@ const addExpense = ({ description = '', note = '', amount = 0, createdAt = 0 } =
 	}
 });
 
-// REMOVE_EXPENSE
+// REMOVE_EXPENSE action type generator
 const removeExpense = ({ id } = {}) => ({
 	type : 'REMOVE_EXPENSE',
 	id
 });
 
-// EDIT_EXPENSE
+// EDIT_EXPENSE action type generator
 const editExpense = (id, updates) => ({
 	type    : 'EDIT_EXPENSE',
 	id,
 	updates
 });
-// SET_TEXT_FILTER
+// SET_TEXT_FILTER action type generator
 const setTextFilter = (text = '') => ({
 	type : 'SET_TEXT_FILTER',
 	text
 });
-// SORT_BY_DATE
+// SORT_BY_DATE action type generator
 const sortByDate = () => ({
 	type : 'SORT_BY_DATE'
 });
-// SORT_BY_AMOUNT
+// SORT_BY_AMOUNT action type generator
 const sortByAmount = () => ({
 	type : 'SORT_BY_AMOUNT'
 });
-// SET_START_DATE
+// SET_START_DATE action type generator
 const setStartDate = (startDate) => ({
 	type      : 'SET_START_DATE',
 	startDate
 });
-// SET_END_DATE
+// SET_END_DATE action type generator
 const setEndDate = (endDate) => ({
 	type    : 'SET_END_DATE',
 	endDate
