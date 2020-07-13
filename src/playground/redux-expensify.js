@@ -114,6 +114,11 @@ const filtersReducer = (state = filtersReducerDefaultState, action) => {
 	}
 };
 
+// Get visible expenses
+const getVisibleExpenses = (expenses, filters) => {
+	return expenses;
+};
+
 // Store creation
 const store = createStore(
 	combineReducers({
@@ -123,7 +128,9 @@ const store = createStore(
 );
 
 store.subscribe(() => {
-	console.log(store.getState());
+	const state = store.getState();
+	const visibleExpenses = getVisibleExpenses(state.expenses, state.filters);
+	console.log(visibleExpenses);
 });
 
 // const expenseOne = store.dispatch(addExpense({ description: 'Rent', amount: 100 }));
