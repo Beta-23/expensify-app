@@ -15,9 +15,6 @@ const getVisibleExpenses = (expenses, {text, sortBy, startDate, endDate}) => {
 			else if (sortBy === 'amount') {
 				return a.amount < b.amount ? 1 : -1;
 			}
-			else if (sortBy === 'text') {
-				return a.text < b.text ? 1 : -1;
-			}
 		});
 };
 
