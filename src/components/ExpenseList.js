@@ -8,9 +8,11 @@ const ExpenseList = (props) => (
 	</div>
 );
 
-// Using the connect library from react-redux
-export default connect((state) => {
+const mapStateToProps = (state) => {
 	return {
 		expenses: state.expenses
 	};
-})(ExpenseList);
+};
+
+// Using the connect library from react-redux
+export default connect(mapStateToProps)(ExpenseList);
