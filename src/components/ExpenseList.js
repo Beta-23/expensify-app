@@ -9,10 +9,8 @@ const ExpenseList = (props) => (
 );
 
 // Using the connect library from react-redux
-const ConnectedExpenseList = connect((state) => {
+export default connect((state) => {
 	return {
 		expenses: state.expenses
 	};
 })(ExpenseList);
-
-export default ConnectedExpenseList;
