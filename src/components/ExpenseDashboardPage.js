@@ -1,11 +1,10 @@
 import React from 'react';
-
+import ExpenseList from './ExpenseList';
 // Functional Components
 const ExpenseDashboardPage = () => (
-    <div>
-        <h5>DASH | App dashboard Component</h5>
-    </div>
+	<div>
+		<ExpenseList />
+	</div>
 );
 
 export default ExpenseDashboardPage;
-
