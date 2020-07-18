@@ -16,5 +16,5 @@ const mapStateToProps = (state) => {
 	};
 };
 
-// Using the connect library from react-redux
+// Using the connect library for props to use and to what component
 export default connect(mapStateToProps)(ExpenseList);
