@@ -1,10 +1,13 @@
 import React from 'react';
 import {connect} from 'react-redux';
+import ExpenseListItem from './ExpenseListItem';
 
 const ExpenseList = (props) => (
 	<div>
 		<h5>DASH | App dashboard Component</h5>
-		{props.expenses.length}
+		{props.expenses.map((expense) => {
+			return <ExpenseListItem key={expense.id} {...expense} />;
+		})}
 	</div>
 );
 
