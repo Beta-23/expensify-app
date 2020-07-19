@@ -4,7 +4,6 @@ import {connect} from 'react-redux';
 const ExpenseList = (props) => (
 	<div>
 		<h5>DASH | App dashboard Component</h5>
-		{props.filters.text}
 		{props.expenses.length}
 	</div>
 );
