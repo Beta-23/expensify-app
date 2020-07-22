@@ -41,10 +41,26 @@ export default class ExpenseForm extends React.Component {
 		this.setState(() => ({calendarfocused: focused}));
 	};
 
+	onSubmit = (e) => {
+		e.preventDefault();
+		if (!this.state.description || !this.state.amount) {
+			this.setState(() => ({
+				error: 'Please Provide Valid Description and/or Amount'
+			}));
+		}
+		else {
+			this.setState(() => {
+				error: '';
+			});
+			console.log('expense submited!');
+		}
+	};
+
 	render () {
 		return (
 			<div>
-				<form>
+				{this.state.error && <p>{this.state.error}</p>}
+				<form onSubmit={this.onSubmit}>
 					<input
 						type='text'
 						placeholder='Description'
