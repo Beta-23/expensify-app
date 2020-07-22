@@ -4,9 +4,19 @@ Budgeting Application:
 2. Edit expenses
 3. Keep track of expenses
 
-## Installation
-
-
+## Dependencies Installation
+[Documentation to Moment](https://momentjs.com/)
+```JavaScript
+yarn add moment@latest
+```
+[Documentation to react-dates](https://github.com/airbnb/react-dates)
+```JavaScript
+yarn add react-dates@latest
+```
+[link to react-addons-shallow-compare](https://www.npmjs.com/package/react-addons-shallow-compare)
+```JavaScript
+yarn add react-addons-shallow-compare@latest
+```
 
 ## Usage
 ```JavaScript
