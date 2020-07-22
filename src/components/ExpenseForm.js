@@ -4,10 +4,6 @@ import {SingleDatePicker} from 'react-dates';
 import 'react-dates/lib/css/_datepicker.css';
 import 'react-dates/initialize';
 
-const now = moment();
-
-console.log(now.format('MMM Do, YYYY'));
-
 export default class ExpenseForm extends React.Component {
 	state = {
 		description: '',
@@ -58,9 +54,9 @@ export default class ExpenseForm extends React.Component {
 
 					<SingleDatePicker
 						date={this.state.createdAt} // momentPropTypes.momentObj or null
-						onDateChange={this.onDateChange} // PropTypes.func.isRequired
+						onDateChange={this.onDateChange} // PropTypes.func.isRequired, track changes
 						focused={this.state.calendarfocused} // PropTypes.bool
-						onFocusChange={this.onFocusChange} // PropTypes.func.isRequired
+						onFocusChange={this.onFocusChange} // PropTypes.func.isRequired, track changes
 						numberOfMonths={1} // number of month calendars on page
 						isOutsideRange={() => false} // every single day available
 					/>
