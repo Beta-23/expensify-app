@@ -23,10 +23,10 @@ export default class ExpenseForm extends React.Component {
 		e.persist();
 		this.setState(() => ({note: e.target.value}));
 	};
-	// Logic with regular expressions
+	// Amount input Logic with regular expressions starting with 1 to ∞
 	onAmountChange = (e) => {
 		const amount = e.target.value;
-		if (amount.match(/^\d*(\.\d{0,2})?$/)) {
+		if (!amount || amount.match(/^\d{1,}(\.\d{0,2})?$/)) {
 			this.setState(() => ({amount}));
 		}
 	};
