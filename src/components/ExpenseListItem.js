@@ -1,12 +1,14 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import {connect} from 'react-redux';
 import {removeExpense} from '../actions/expenses';
 
 // statless functional component
 const ExpenseListItem = ({dispatch, id, description, amount, createdAt}) => (
 	<div>
-		<h3>{description}</h3>
-
+		<Link to={`/edit/${id}`} activeClassName='is-active' exact={true}>
+			<h3>{description}</h3>
+		</Link>
 		<p>
 			Amount: {amount} Time Stamp: {createdAt}
 			<button
