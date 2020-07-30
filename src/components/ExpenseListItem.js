@@ -1,7 +1,5 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import {connect} from 'react-redux';
-import {removeExpense} from '../actions/expenses';
 
 // statless functional component
 const ExpenseListItem = ({dispatch, id, description, amount, createdAt}) => (
@@ -11,15 +9,8 @@ const ExpenseListItem = ({dispatch, id, description, amount, createdAt}) => (
 		</Link>
 		<p>
 			Amount: {amount} Time Stamp: {createdAt}
-			<button
-				onClick={(e) => {
-					dispatch(removeExpense({id}));
-				}}
-			>
-				Remove
-			</button>
 		</p>
 	</div>
 );
 
-export default connect()(ExpenseListItem);
+export default ExpenseListItem;
