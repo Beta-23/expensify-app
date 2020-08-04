@@ -34,15 +34,27 @@ yarn run dev-server
 ```  
 ## Development
 
-## Testing
-> Test 
-```JavaScript
+## Testing via Jest
 
+> Install locally 
+```JavaScript
+yarn add jest@latest
 ```
-Or
-> Test with Jest
+> Add the following to the package.json file and automatically watch for updates
 ```JavaScript
-
+scripts": {
+        "test": "jest --watch"
+        }
+```
+> Add following plugin to .babelrc file
+```JavaScript
+"test": [
+        "jest"
+    ]
+```
+> Running test manually
+```JavaScript
+yarn test
 ```
 
 ## Contributing
