@@ -54,7 +54,7 @@ scripts": {
 ```
 > Running test manually
 ```JavaScript
-yarn test
+yarn test -- --watch
 ```
 
 ## Contributing
