@@ -25,3 +25,12 @@ test('Test should generate set text filter action object with text value', () =>
 		text
 	});
 }); //assertion
+
+test('Test should generate set text filter action object with default value', () => {
+	const text = '';
+	const action = setTextFilter(text);
+	expect(action).toEqual({
+		type: 'SET_TEXT_FILTER',
+		text
+	});
+}); //assertion
