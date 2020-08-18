@@ -72,8 +72,10 @@ test('Test should sort by date', () => {
 test('Test should sort by amount', () => {
 	const filters = {
 		text: '',
-		amount: undefined
+		sortBy: 'amount',
+		startDate: undefined,
+		endDate: undefined
 	};
 	const result = selectExpenses(expenses, filters);
-	expect(result).toEqual([expenses[0], expenses[1], expenses[2]]); //assertion
+	expect(result).toEqual([expenses[1], expenses[2], expenses[0]]); //assertion
 });
