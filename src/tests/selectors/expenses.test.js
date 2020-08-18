@@ -46,3 +46,14 @@ test('Test should filter by startDate', () => {
 	const result = selectExpenses(expenses, filters);
 	expect(result).toEqual([expenses[2], expenses[0]]); //assertion
 });
+
+test('Test should filter by endDate', () => {
+	const filters = {
+		text: '',
+		sortBy: 'date',
+		startDate: undefined,
+		endDate: moment(0)
+	};
+	const result = selectExpenses(expenses, filters);
+	expect(result).toEqual([expenses[0], expenses[1], expenses[2]]); //assertion
+});
