@@ -15,3 +15,8 @@ test('Test should setup sortBy to amount', () => {
 	const state = filtersReducer(undefined, {type: 'SORT_BY_AMOUNT'});
 	expect(state.sortBy).toBe('amount');
 }); //assertion
+
+test('Test should setup sortBy date', () => {
+	const state = filtersReducer(undefined, {type: 'SORT_BY_DATE'});
+	expect(state.sortBy).toBe('date');
+}); //assertion
