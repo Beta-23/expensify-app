@@ -10,3 +10,8 @@ test('Test should setup filter value', () => {
 		endDate: moment().endOf('month')
 	});
 }); //assertion
+
+test('Test should setup sortBy to amount', () => {
+	const state = filtersReducer(undefined, {type: 'SORT_BY_AMOUNT'});
+	expect(state.sortBy).toBe('amount');
+}); //assertion
