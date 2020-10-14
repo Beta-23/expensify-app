@@ -22,4 +22,4 @@ test('should not remove expenses if id not found', () => {
 	};
 	const state = expensesReducer(expenses, action);
 	expect(state).toEqual(expenses);
-}); //assertion to remove invalid index -1 in array data
+}); //assertion to not remove invalid index -1 in array data
