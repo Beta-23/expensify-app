@@ -23,3 +23,19 @@ test('should not remove expenses if id not found', () => {
 	const state = expensesReducer(expenses, action);
 	expect(state).toEqual(expenses);
 }); //assertion to not remove invalid index -1 in array data
+
+test('should add an expense', () => {
+	const expense = {
+		id: '109',
+		description: 'Laptop',
+		note: '',
+		createdAt: 20000,
+		amount: 29500
+	};
+	const action = {
+		type: 'ADD_EXPENSE',
+		expense
+	};
+	const state = expensesReducer(expenses, action);
+	expect(state).toEqual([...expenses, expense]);
+}); // assertion to add expense
