@@ -9,7 +9,7 @@
 		"server": "live-server public/",
 		"build": "webpack",
 		"dev-server": "webpack-dev-server",
-		"test": "jest"
+		"test": "jest --config=jest.config.json"
 	},
 	"dependencies": {
 		"babel-cli": "6.24.1",
@@ -21,6 +21,9 @@
 		"babel-preset-react": "6.24.1",
 		"css-loader": "3.5.3",
 		"elliptic": "^6.5.3",
+		"enzyme": "3.0.0",
+		"enzyme-adapter-react-16": "^1.15.5",
+		"enzyme-to-json": "3.0.1",
 		"jest": "20.0.4",
 		"live-server": "^1.2.1",
 		"lodash": "^4.17.19",
@@ -29,10 +32,11 @@
 		"node-forge": "^0.10.0",
 		"node-sass": "^4.14.1",
 		"normalize.css": "^8.0.1",
-		"react": "16.13.1",
+		"raf": "3.3.2",
+		"react": "16.0.0",
 		"react-addons-shallow-compare": "^15.6.2",
 		"react-dates": "^21.8.0",
-		"react-dom": "16.13.1",
+		"react-dom": "16.0.0",
 		"react-modal": "2.2.2",
 		"react-redux": "^7.2.0",
 		"react-router-dom": "^5.2.0",

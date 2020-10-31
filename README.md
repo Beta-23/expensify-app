@@ -35,6 +35,11 @@ yarn run dev-server
 ## Development
 
 ## Testing via Jest
+> testing components / dom animation with enzyme and raf
+```
+yarn add enzyme@3.0.0 enzyme-adapter-react-16@1.0.0 raf@3.3.2
+```
+[airbnb enzyme docs](https://enzymejs.github.io/enzyme/)
 
 > Install locally 
 ```JavaScript
