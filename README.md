@@ -39,6 +39,7 @@ yarn run dev-server
 ```
 yarn add enzyme@3.0.0 enzyme-adapter-react-16@1.0.0 raf@3.3.2
 ```
+[airbnb enzyme docs](https://enzymejs.github.io/enzyme/)
 
 > Install locally 
 ```JavaScript
