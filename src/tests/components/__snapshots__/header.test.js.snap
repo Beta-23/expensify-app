@@ -5,24 +5,24 @@ exports[`should render Header correctly 1`] = `
   <h1>
     ExpensifyApp
   </h1>
-  <Unknown
+  <NavLink
     activeClassName="is-active"
     exact={true}
     to="/"
   >
     Dashboard
-  </Unknown>
-  <Unknown
+  </NavLink>
+  <NavLink
     activeClassName="is-active"
     to="/create"
   >
     Create Expense
-  </Unknown>
-  <Unknown
+  </NavLink>
+  <NavLink
     activeClassName="is-active"
     to="/help"
   >
     QA
-  </Unknown>
+  </NavLink>
 </header>
 `;
