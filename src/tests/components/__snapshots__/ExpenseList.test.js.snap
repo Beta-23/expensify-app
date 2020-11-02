@@ -2,9 +2,6 @@
 
 exports[`Should render ExpenseList with expenses 1`] = `
 <div>
-  <h5>
-    DASH | App dashboard Component
-  </h5>
   <ExpenseListItem
     amount={195}
     createdAt={0}

@@ -5,10 +5,15 @@ import selectExpenses from '../selectors/expenses';
 
 export const ExpenseList = (props) => (
 	<div>
-		<h5>DASH | App dashboard Component</h5>
-		{props.expenses.map((expense) => {
-			return <ExpenseListItem key={expense.id} {...expense} />;
-		})}
+		{
+			props.expenses.length === 0 ? (
+				<p>No Expenses Added!</p>
+			) : (
+				props.expenses.map((expense) => {
+				return <ExpenseListItem key={expense.id} {...expense} />;
+				})
+			)	
+		}
 	</div>
 );
 
