@@ -7,3 +7,8 @@ test('Should render ExpenseList with expenses', () => {
     const wrapper = shallow(<ExpenseList expenses={expenses} />)
     expect(wrapper).toMatchSnapshot();
 })
+
+test('Should render p tag whith empty expenses', () => {
+    const wrapper = shallow(<ExpenseList expenses={[]} />)
+    expect(wrapper).toMatchSnapshot();
+})
