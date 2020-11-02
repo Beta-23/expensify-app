@@ -28,3 +28,11 @@ exports[`Should render ExpenseList with expenses 1`] = `
   />
 </div>
 `;
+
+exports[`Should render p tag whith empty expenses 1`] = `
+<div>
+  <p>
+    No Expenses Added!
+  </p>
+</div>
+`;
