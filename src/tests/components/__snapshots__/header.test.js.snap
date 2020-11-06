@@ -1,28 +1,342 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should render Header correctly 1`] = `
-<header>
-  <h1>
-    ExpensifyApp
-  </h1>
-  <[object Object]
-    activeClassName="is-active"
-    exact={true}
-    to="/"
-  >
-    Dashboard
-  </[object Object]>
-  <[object Object]
-    activeClassName="is-active"
-    to="/create"
-  >
-    Create Expense
-  </[object Object]>
-  <[object Object]
-    activeClassName="is-active"
-    to="/help"
-  >
-    QA
-  </[object Object]>
-</header>
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Header />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <h1>
+          ExpensifyApp
+</h1>,
+        <Unknown
+          activeClassName="is-active"
+          exact={true}
+          to="/"
+>
+          Dashboard
+</Unknown>,
+        <Unknown
+          activeClassName="is-active"
+          to="/create"
+>
+          Create Expense
+</Unknown>,
+        <Unknown
+          activeClassName="is-active"
+          to="/help"
+>
+          QA
+</Unknown>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "ExpensifyApp",
+        },
+        "ref": null,
+        "rendered": "ExpensifyApp",
+        "type": "h1",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "activeClassName": "is-active",
+          "children": "Dashboard",
+          "exact": true,
+          "to": "/",
+        },
+        "ref": null,
+        "rendered": "Dashboard",
+        "type": Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "displayName": "NavLink",
+          "propTypes": Object {
+            "activeClassName": [Function],
+            "activeStyle": [Function],
+            "aria-current": [Function],
+            "className": [Function],
+            "exact": [Function],
+            "innerRef": [Function],
+            "isActive": [Function],
+            "location": [Function],
+            "onClick": [Function],
+            "replace": [Function],
+            "sensitive": [Function],
+            "strict": [Function],
+            "style": [Function],
+            "target": [Function],
+            "to": [Function],
+          },
+          "render": [Function],
+        },
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "activeClassName": "is-active",
+          "children": "Create Expense",
+          "to": "/create",
+        },
+        "ref": null,
+        "rendered": "Create Expense",
+        "type": Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "displayName": "NavLink",
+          "propTypes": Object {
+            "activeClassName": [Function],
+            "activeStyle": [Function],
+            "aria-current": [Function],
+            "className": [Function],
+            "exact": [Function],
+            "innerRef": [Function],
+            "isActive": [Function],
+            "location": [Function],
+            "onClick": [Function],
+            "replace": [Function],
+            "sensitive": [Function],
+            "strict": [Function],
+            "style": [Function],
+            "target": [Function],
+            "to": [Function],
+          },
+          "render": [Function],
+        },
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "activeClassName": "is-active",
+          "children": "QA",
+          "to": "/help",
+        },
+        "ref": null,
+        "rendered": "QA",
+        "type": Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "displayName": "NavLink",
+          "propTypes": Object {
+            "activeClassName": [Function],
+            "activeStyle": [Function],
+            "aria-current": [Function],
+            "className": [Function],
+            "exact": [Function],
+            "innerRef": [Function],
+            "isActive": [Function],
+            "location": [Function],
+            "onClick": [Function],
+            "replace": [Function],
+            "sensitive": [Function],
+            "strict": [Function],
+            "style": [Function],
+            "target": [Function],
+            "to": [Function],
+          },
+          "render": [Function],
+        },
+      },
+    ],
+    "type": "header",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <h1>
+            ExpensifyApp
+</h1>,
+          <Unknown
+            activeClassName="is-active"
+            exact={true}
+            to="/"
+>
+            Dashboard
+</Unknown>,
+          <Unknown
+            activeClassName="is-active"
+            to="/create"
+>
+            Create Expense
+</Unknown>,
+          <Unknown
+            activeClassName="is-active"
+            to="/help"
+>
+            QA
+</Unknown>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "ExpensifyApp",
+          },
+          "ref": null,
+          "rendered": "ExpensifyApp",
+          "type": "h1",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "activeClassName": "is-active",
+            "children": "Dashboard",
+            "exact": true,
+            "to": "/",
+          },
+          "ref": null,
+          "rendered": "Dashboard",
+          "type": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "displayName": "NavLink",
+            "propTypes": Object {
+              "activeClassName": [Function],
+              "activeStyle": [Function],
+              "aria-current": [Function],
+              "className": [Function],
+              "exact": [Function],
+              "innerRef": [Function],
+              "isActive": [Function],
+              "location": [Function],
+              "onClick": [Function],
+              "replace": [Function],
+              "sensitive": [Function],
+              "strict": [Function],
+              "style": [Function],
+              "target": [Function],
+              "to": [Function],
+            },
+            "render": [Function],
+          },
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "activeClassName": "is-active",
+            "children": "Create Expense",
+            "to": "/create",
+          },
+          "ref": null,
+          "rendered": "Create Expense",
+          "type": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "displayName": "NavLink",
+            "propTypes": Object {
+              "activeClassName": [Function],
+              "activeStyle": [Function],
+              "aria-current": [Function],
+              "className": [Function],
+              "exact": [Function],
+              "innerRef": [Function],
+              "isActive": [Function],
+              "location": [Function],
+              "onClick": [Function],
+              "replace": [Function],
+              "sensitive": [Function],
+              "strict": [Function],
+              "style": [Function],
+              "target": [Function],
+              "to": [Function],
+            },
+            "render": [Function],
+          },
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "activeClassName": "is-active",
+            "children": "QA",
+            "to": "/help",
+          },
+          "ref": null,
+          "rendered": "QA",
+          "type": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "displayName": "NavLink",
+            "propTypes": Object {
+              "activeClassName": [Function],
+              "activeStyle": [Function],
+              "aria-current": [Function],
+              "className": [Function],
+              "exact": [Function],
+              "innerRef": [Function],
+              "isActive": [Function],
+              "location": [Function],
+              "onClick": [Function],
+              "replace": [Function],
+              "sensitive": [Function],
+              "strict": [Function],
+              "style": [Function],
+              "target": [Function],
+              "to": [Function],
+            },
+            "render": [Function],
+          },
+        },
+      ],
+      "type": "header",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromError": true,
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
 `;
