@@ -36,7 +36,8 @@ test('should set note on textarea change', () => {
     const value = 'New note value';
     const wrapper = shallow(<ExpenseForm />);
     wrapper.find('textarea').simulate('change', {
-        target: { value }
+        target: { value },
+        persist: jest.fn()
     });
     expect(wrapper.state('note')).toBe(value);
 });
