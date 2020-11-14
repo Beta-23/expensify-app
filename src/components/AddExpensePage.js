@@ -3,19 +3,23 @@ import {connect} from 'react-redux';
 import ExpenseForm from './ExpenseForm';
 import {addExpense} from '../actions/expenses';
 
-// Functional Components
+export class AddExpensePage extends React.Component {
+	onSubmit = (expense) => {
+		this.props.onSubmit(expense)
+		this.props.history.push('/'); // Use the history method to push data to dashboard
+	};
+	render() {
+		return (
+			<div>
+				<h1>ADD EXPENSES</h1>
+				<ExpenseForm
+					onSubmit={this.onSubmit}
+				/>
+			</div>
+		)
+	}
+}
 
-const AddExpensePage = (props) => (
-	<div>
-		<h1>ADD EXPENSES</h1>
-		<ExpenseForm
-			onSubmit={(expense) => {
-				props.onSubmit(expense)
-				props.history.push('/'); // Use the history method to push data to dashboard
-			}}
-		/>
-	</div>
-);
 const mapDispatchToProps = (dispatch) => ({
 	onSubmit: (expense) => dispatch(addExpense(expense))
 });
