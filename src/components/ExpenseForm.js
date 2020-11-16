@@ -53,7 +53,7 @@ export default class ExpenseForm extends React.Component {
 		}
 		else {
 			this.setState(() => {
-				error: '';
+				error:"";
 			});
 			this.props.onSubmit({
 				description: this.state.description,
