@@ -6,6 +6,21 @@ ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <EditExpensePage
     editExpense={[Function]}
+    expense={
+        Object {
+            "amount": 4500,
+            "createdAt": 345600000,
+            "description": "Credit Card",
+            "id": "3",
+            "note": "",
+          }
+    }
+    history={
+        Object {
+            "push": [Function],
+          }
+    }
+    removeExpense={[Function]}
 />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -23,7 +38,15 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <ExpenseForm
-          expense={undefined}
+          expense={
+                    Object {
+                              "amount": 4500,
+                              "createdAt": 345600000,
+                              "description": "Credit Card",
+                              "id": "3",
+                              "note": "",
+                            }
+          }
           onSubmit={[Function]}
 />,
         <button
@@ -40,7 +63,13 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
-          "expense": undefined,
+          "expense": Object {
+            "amount": 4500,
+            "createdAt": 345600000,
+            "description": "Credit Card",
+            "id": "3",
+            "note": "",
+          },
           "onSubmit": [Function],
         },
         "ref": null,
@@ -70,7 +99,15 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <ExpenseForm
-            expense={undefined}
+            expense={
+                        Object {
+                                    "amount": 4500,
+                                    "createdAt": 345600000,
+                                    "description": "Credit Card",
+                                    "id": "3",
+                                    "note": "",
+                                  }
+            }
             onSubmit={[Function]}
 />,
           <button
@@ -87,7 +124,13 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "expense": undefined,
+            "expense": Object {
+              "amount": 4500,
+              "createdAt": 345600000,
+              "description": "Credit Card",
+              "id": "3",
+              "note": "",
+            },
             "onSubmit": [Function],
           },
           "ref": null,
