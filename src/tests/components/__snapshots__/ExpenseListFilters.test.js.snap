@@ -71,6 +71,7 @@ ShallowWrapper {
           enableOutsideDays={false}
           endDate={null}
           endDateAriaLabel={undefined}
+          endDateId="addExpense_end_date"
           endDateOffset={undefined}
           endDatePlaceholderText="End Date"
           firstDayOfWeek={null}
@@ -156,6 +157,7 @@ ShallowWrapper {
           small={false}
           startDate={null}
           startDateAriaLabel={undefined}
+          startDateId="addExpense_start_date"
           startDateOffset={undefined}
           startDatePlaceholderText="Start Date"
           transitionDuration={undefined}
@@ -252,6 +254,7 @@ ShallowWrapper {
           "enableOutsideDays": false,
           "endDate": null,
           "endDateAriaLabel": undefined,
+          "endDateId": "addExpense_end_date",
           "endDateOffset": undefined,
           "endDatePlaceholderText": "End Date",
           "firstDayOfWeek": null,
@@ -335,6 +338,7 @@ ShallowWrapper {
           "small": false,
           "startDate": null,
           "startDateAriaLabel": undefined,
+          "startDateId": "addExpense_start_date",
           "startDateOffset": undefined,
           "startDatePlaceholderText": "Start Date",
           "transitionDuration": undefined,
@@ -395,6 +399,7 @@ ShallowWrapper {
             enableOutsideDays={false}
             endDate={null}
             endDateAriaLabel={undefined}
+            endDateId="addExpense_end_date"
             endDateOffset={undefined}
             endDatePlaceholderText="End Date"
             firstDayOfWeek={null}
@@ -480,6 +485,7 @@ ShallowWrapper {
             small={false}
             startDate={null}
             startDateAriaLabel={undefined}
+            startDateId="addExpense_start_date"
             startDateOffset={undefined}
             startDatePlaceholderText="Start Date"
             transitionDuration={undefined}
@@ -576,6 +582,7 @@ ShallowWrapper {
             "enableOutsideDays": false,
             "endDate": null,
             "endDateAriaLabel": undefined,
+            "endDateId": "addExpense_end_date",
             "endDateOffset": undefined,
             "endDatePlaceholderText": "End Date",
             "firstDayOfWeek": null,
@@ -659,6 +666,7 @@ ShallowWrapper {
             "small": false,
             "startDate": null,
             "startDateAriaLabel": undefined,
+            "startDateId": "addExpense_start_date",
             "startDateOffset": undefined,
             "startDatePlaceholderText": "Start Date",
             "transitionDuration": undefined,
@@ -774,6 +782,7 @@ ShallowWrapper {
           enableOutsideDays={false}
           endDate={"1970-01-04T00:00:00.000Z"}
           endDateAriaLabel={undefined}
+          endDateId="addExpense_end_date"
           endDateOffset={undefined}
           endDatePlaceholderText="End Date"
           firstDayOfWeek={null}
@@ -859,6 +868,7 @@ ShallowWrapper {
           small={false}
           startDate={"1970-01-01T00:00:00.000Z"}
           startDateAriaLabel={undefined}
+          startDateId="addExpense_start_date"
           startDateOffset={undefined}
           startDatePlaceholderText="Start Date"
           transitionDuration={undefined}
@@ -955,6 +965,7 @@ ShallowWrapper {
           "enableOutsideDays": false,
           "endDate": "1970-01-04T00:00:00.000Z",
           "endDateAriaLabel": undefined,
+          "endDateId": "addExpense_end_date",
           "endDateOffset": undefined,
           "endDatePlaceholderText": "End Date",
           "firstDayOfWeek": null,
@@ -1038,6 +1049,7 @@ ShallowWrapper {
           "small": false,
           "startDate": "1970-01-01T00:00:00.000Z",
           "startDateAriaLabel": undefined,
+          "startDateId": "addExpense_start_date",
           "startDateOffset": undefined,
           "startDatePlaceholderText": "Start Date",
           "transitionDuration": undefined,
@@ -1098,6 +1110,7 @@ ShallowWrapper {
             enableOutsideDays={false}
             endDate={"1970-01-04T00:00:00.000Z"}
             endDateAriaLabel={undefined}
+            endDateId="addExpense_end_date"
             endDateOffset={undefined}
             endDatePlaceholderText="End Date"
             firstDayOfWeek={null}
@@ -1183,6 +1196,7 @@ ShallowWrapper {
             small={false}
             startDate={"1970-01-01T00:00:00.000Z"}
             startDateAriaLabel={undefined}
+            startDateId="addExpense_start_date"
             startDateOffset={undefined}
             startDatePlaceholderText="Start Date"
             transitionDuration={undefined}
@@ -1279,6 +1293,7 @@ ShallowWrapper {
             "enableOutsideDays": false,
             "endDate": "1970-01-04T00:00:00.000Z",
             "endDateAriaLabel": undefined,
+            "endDateId": "addExpense_end_date",
             "endDateOffset": undefined,
             "endDatePlaceholderText": "End Date",
             "firstDayOfWeek": null,
@@ -1362,6 +1377,7 @@ ShallowWrapper {
             "small": false,
             "startDate": "1970-01-01T00:00:00.000Z",
             "startDateAriaLabel": undefined,
+            "startDateId": "addExpense_start_date",
             "startDateOffset": undefined,
             "startDatePlaceholderText": "Start Date",
             "transitionDuration": undefined,
