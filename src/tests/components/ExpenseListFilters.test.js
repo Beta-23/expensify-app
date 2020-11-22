@@ -52,3 +52,11 @@ test('should sort by date', () => {
     });
     expect(sortByDate).toHaveBeenCalled();
 });
+
+test('should sort by amount', () => {
+    const value = 'amount';
+    wrapper.find('select').simulate('change', {
+        target: { value }
+    });
+    expect(sortByAmount).toHaveBeenCalled();
+});
