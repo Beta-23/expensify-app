@@ -22,6 +22,7 @@ yarn add react-addons-shallow-compare@latest
 ```JavaScript
 yarn run dev-server
 ```
+
 ## To run playground files, change entry path in the webpack.config:
 ```JavaScript
 module.exports = {
