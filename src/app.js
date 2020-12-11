@@ -11,7 +11,7 @@ import './styles/styles.scss';
 import 'react-dates/lib/css/_datepicker.css';
 
 const store = storeconfig();
-
+console.log('testing source-map!')
 const jsx = (
 	<Provider store={store}>
 		<AppRouter />
