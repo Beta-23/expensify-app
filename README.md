@@ -66,6 +66,13 @@ scripts": {
 yarn test -- --watchAll
 ```
 
+## Production
+- (Install Heroku CLI)[https://devcenter.heroku.com/articles/heroku-cli#download-and-install]
+- Check version via command line:
+```JavaScript
+heroku --version
+``
+
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/Beta-23/expensify-app.git. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
