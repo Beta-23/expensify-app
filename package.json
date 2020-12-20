@@ -8,7 +8,7 @@
 	"scripts": {
 		"build:dev": "webpack",
 		"build:prod": "webpack -p --env production",
-		"dev-server": "webpack-dev-server",
+		"dev-server": "webpack serve",
 		"test": "jest --config=jest.config.json",
 		"start": "node server/server.js",
 		"heroku-postbuild": "yarn run build:prod"
@@ -54,6 +54,7 @@
 		"enzyme-to-json": "3.0.1",
 		"jest": "20.0.4",
 		"react-test-renderer": "16.0.0",
+		"webpack-cli": "^4.2.0",
 		"webpack-dev-server": "^3.11.0"
 	}
 }
