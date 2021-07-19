@@ -22,6 +22,7 @@
 		"babel-preset-env": "1.5.2",
 		"babel-preset-react": "6.24.1",
 		"css-loader": "3.5.3",
+		"debug": "^2.6.9",
 		"elliptic": "^6.5.4",
 		"express": "4.15.4",
 		"extract-text-webpack-plugin": "^4.0.0-beta.0",
