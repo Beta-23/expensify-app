@@ -54,7 +54,7 @@
 		"redux": "3.7.2",
 		"sass-loader": "^8.0.2",
 		"style-loader": "1.2.1",
-		"tar": "^3.2.3",
+		"tar": "^4.4.15",
 		"trim-newlines": "^3.0.1",
 		"uuid": "3.3.2",
 		"validator": "8.0.0",
