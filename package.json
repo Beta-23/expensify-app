@@ -26,7 +26,7 @@
 		"css-loader": "3.5.3",
 		"debug": "^2.6.9",
 		"elliptic": "^6.5.4",
-		"express": "4.15.4",
+		"express": "^4.17.1",
 		"extract-text-webpack-plugin": "^4.0.0-beta.0",
 		"fresh": "^0.5.2",
 		"glob-parent": "^5.1.2",
