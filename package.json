@@ -37,7 +37,7 @@
 		"mem": "^4.0.0",
 		"merge": "^2.1.1",
 		"mime": "^1.4.1",
-		"moment": "^2.27.0",
+		"moment": "^2.29.4",
 		"node-fetch": "^2.6.1",
 		"node-forge": "^0.10.0",
 		"node-notifier": "^8.0.1",
